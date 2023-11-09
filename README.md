@@ -190,18 +190,18 @@ PUTCHAR_PROTOTYPE
 
 ### Board Setting and Its Connection:
 
-![ouput](./https://user-images.githubusercontent.com/118708040/281316618-7bd8bdfc-d3e9-49b6-bb8e-a4a151f1e20e.png)
-![ouput](./https://user-images.githubusercontent.com/118708040/281316731-1c310f27-50f5-45d0-bca6-79291742532a.png)
-![ouput](./https://user-images.githubusercontent.com/118708040/281316842-1f31f72a-d106-4dd8-8c6e-402459cc5f1e.png)
+![ouput](https://user-images.githubusercontent.com/122793480/281318081-5c75b94d-9e0b-4b14-8021-115bfde77a64.png)
+![ouput](https://user-images.githubusercontent.com/118708040/281316731-1c310f27-50f5-45d0-bca6-79291742532a.png)
+![ouput](https://user-images.githubusercontent.com/118708040/281316842-1f31f72a-d106-4dd8-8c6e-402459cc5f1e.png)
 
 ### General ADC Value:
-![ouput](./https://user-images.githubusercontent.com/118708040/281317157-e05a6dd6-a447-4122-9f89-601e0153f55c.png)
+![ouput](https://user-images.githubusercontent.com/118708040/281317157-e05a6dd6-a447-4122-9f89-601e0153f55c.png)
 
 ### Dipping soil-moisture-sensor-device in water:
-![ouput](./https://user-images.githubusercontent.com/118708040/281317571-056d7b03-74c4-4c8b-9088-7862f61499f5.png)
+![ouput](https://user-images.githubusercontent.com/118708040/281317571-056d7b03-74c4-4c8b-9088-7862f61499f5.png)
 
 ### ADC Value after Dipping Soil-moisture -device in water:
-![ouput](./https://user-images.githubusercontent.com/118708040/281317675-8acf03b3-1fbe-4dcc-8d8d-dcba7229077c.png)
+![ouput](https://user-images.githubusercontent.com/118708040/281317675-8acf03b3-1fbe-4dcc-8d8d-dcba7229077c.png)
 
 ## Result :
 Hence,the configuring analog port to inteface an analog sensor and read the values using serial port runned successfully.
