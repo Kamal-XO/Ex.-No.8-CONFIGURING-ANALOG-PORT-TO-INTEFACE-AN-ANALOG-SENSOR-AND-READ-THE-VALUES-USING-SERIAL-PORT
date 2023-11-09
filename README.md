@@ -1,6 +1,4 @@
  
-
-
 ### Ex. No. :8 CONFIGURING ANALOG PORT TO INTEFACE AN ANALOG SENSOR AND READ THE VALUES USING SERIAL PORT
 ## Date: 
 ###  
@@ -149,17 +147,64 @@ GND pin is a Ground
 This module also includes a potentiometer that will fix the threshold value, & the value can be evaluated by the comparator-LM393. The LED will turn on/off based on the threshold value.
 
 
-##  Program 
+##  Program :
+```
+Developed by: Kamalesh SV
+Register Number : 212222240041
+```
+```
+#include "main.h"
+#include"stdio.h"
+uint32_t adcvalue;
+#if defined (_ICCARM) || defined (_ARMCC_VERSION)
+#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE *f)
+#elif defined(_GNUC_)
+   
+#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
+#endif  
 
+while(1)
+{
 
- 
+	HAL_ADC_Start(&hadc1);
+			HAL_ADC_PollForConversion(&hadc1,100);
+			adcvalue = HAL_ADC_GetValue(&hadc1);
+			HAL_ADC_Stop(&hadc1);
+			HAL_Delay(500);
+			printf("ADC VALUE:%ld\n",adcvalue);
 
-## Result :
+}
+
+PUTCHAR_PROTOTYPE
+{
+
+  HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1, 0xFFFF);
+
+  return ch;
+
+}
+
+```
  
 ## Output  :
 
+### Board Setting and Its Connection:
 
+![ouput](./https://user-images.githubusercontent.com/118708040/281316618-7bd8bdfc-d3e9-49b6-bb8e-a4a151f1e20e.png)
+![ouput](./https://user-images.githubusercontent.com/118708040/281316731-1c310f27-50f5-45d0-bca6-79291742532a.png)
+![ouput](./https://user-images.githubusercontent.com/118708040/281316842-1f31f72a-d106-4dd8-8c6e-402459cc5f1e.png)
 
+### General ADC Value:
+![ouput](./https://user-images.githubusercontent.com/118708040/281317157-e05a6dd6-a447-4122-9f89-601e0153f55c.png)
+
+### Dipping soil-moisture-sensor-device in water:
+![ouput](./https://user-images.githubusercontent.com/118708040/281317571-056d7b03-74c4-4c8b-9088-7862f61499f5.png)
+
+### ADC Value after Dipping Soil-moisture -device in water:
+![ouput](./https://user-images.githubusercontent.com/118708040/281317675-8acf03b3-1fbe-4dcc-8d8d-dcba7229077c.png)
+
+## Result :
+Hence,the configuring analog port to inteface an analog sensor and read the values using serial port runned successfully.
 
 
 
